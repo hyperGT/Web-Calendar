@@ -105,7 +105,7 @@ function cabecalho(){
 }
 
 function exibirNomeMes($mes){
-    $nomeMes = date('F', mktime(0, 0, 0, $mes, 1));
+    $nomeMes = date('F', mktime(0, 0, 0, $mes, 1));     // retorna o nome do mês
     echo "<h2>{$nomeMes}</h2>";
 }
 
@@ -123,9 +123,9 @@ function calendario($mes){
         
         cabecalho(); // imprime o cabeçalho 
         
-        $dia = 1;   
-        $semana = array();  
-        $diaAtual = date('j'); 
+        $dia = 1;
+        $semana = array();
+        $diaAtual = date('j');
         $mesAtual = date('n');
 
         // Descobre o primeiro dia do mês
